@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sigasexc.signal_interrupt module &mdash; Signal As Exception  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="sigasexc.signal_handler module" href="sigasexc.signal_handler.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Signal As Exception
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="sigasexc.html">sigasexc package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="sigasexc.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sigasexc.signal_handler.html">sigasexc.signal_handler module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">sigasexc.signal_interrupt module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sigasexc.html#module-sigasexc">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Signal As Exception</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="sigasexc.html">sigasexc package</a> &raquo;</li>
+      <li>sigasexc.signal_interrupt module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/sigasexc.signal_interrupt.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-sigasexc.signal_interrupt">
+<span id="sigasexc-signal-interrupt-module"></span><h1>sigasexc.signal_interrupt module<a class="headerlink" href="#module-sigasexc.signal_interrupt" title="Permalink to this headline"></a></h1>
+<p>The exceptions of signal interrupt.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sigasexc.signal_interrupt.</span></span><span class="sig-name descname"><span class="pre">SignalInterrupt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigframe</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">frame</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sigasexc/signal_interrupt.html#SignalInterrupt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Exception of signal interrupt.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigframe</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">frame</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/sigasexc/signal_interrupt.html#SignalInterrupt.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize SignalInterrupt.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signum</strong> (<em>int</em>) – Signal number.</p></li>
+<li><p><strong>sigframe</strong> (<em>types.FrameType</em><em>, </em><em>optional.</em>) – The current stack frame (None or a frame object).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.subclass">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subclass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">signal.Signals</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt" title="sigasexc.signal_interrupt.SignalInterrupt"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/sigasexc/signal_interrupt.html#SignalInterrupt.subclass"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.subclass" title="Permalink to this definition"></a></dt>
+<dd><p>Get subclass of SignalInterrupt.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sig</strong> (<em>signal.Signals</em><em> or </em><em>int</em>) – Signal number or signal.Signals member.</p></li>
+<li><p><strong>alies</strong> (<em>str</em><em>, </em><em>optional</em><em>, </em><em>default None.</em>) – The name of alies.
+You can access like SignalInterrupt.XXX if alies is “XXX”.
+If alies is None, alies sets to sig.name when
+sig is member of signal.Signals,
+alies sets to f”SIG{sig:02d}” when sig is integer.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGABRT">
+<span class="sig-name descname"><span class="pre">SIGABRT</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGABRT" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGABRT" title="sigasexc.signal_interrupt.SignalInterrupt.SIGABRT"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGABRT</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGALRM">
+<span class="sig-name descname"><span class="pre">SIGALRM</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGALRM" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGALRM" title="sigasexc.signal_interrupt.SignalInterrupt.SIGALRM"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGALRM</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGBUS">
+<span class="sig-name descname"><span class="pre">SIGBUS</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGBUS" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGBUS" title="sigasexc.signal_interrupt.SignalInterrupt.SIGBUS"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGBUS</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGCHLD">
+<span class="sig-name descname"><span class="pre">SIGCHLD</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGCHLD" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGCHLD" title="sigasexc.signal_interrupt.SignalInterrupt.SIGCHLD"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGCHLD</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGCONT">
+<span class="sig-name descname"><span class="pre">SIGCONT</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGCONT" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGCONT" title="sigasexc.signal_interrupt.SignalInterrupt.SIGCONT"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGCONT</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGFPE">
+<span class="sig-name descname"><span class="pre">SIGFPE</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGFPE" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGFPE" title="sigasexc.signal_interrupt.SignalInterrupt.SIGFPE"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGFPE</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGHUP">
+<span class="sig-name descname"><span class="pre">SIGHUP</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGHUP" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGHUP" title="sigasexc.signal_interrupt.SignalInterrupt.SIGHUP"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGHUP</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGILL">
+<span class="sig-name descname"><span class="pre">SIGILL</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGILL" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGILL" title="sigasexc.signal_interrupt.SignalInterrupt.SIGILL"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGILL</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGINT">
+<span class="sig-name descname"><span class="pre">SIGINT</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGINT" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGINT" title="sigasexc.signal_interrupt.SignalInterrupt.SIGINT"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGINT</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGIO">
+<span class="sig-name descname"><span class="pre">SIGIO</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGIO" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGIO" title="sigasexc.signal_interrupt.SignalInterrupt.SIGIO"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGIO</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGKILL">
+<span class="sig-name descname"><span class="pre">SIGKILL</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGKILL" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGKILL" title="sigasexc.signal_interrupt.SignalInterrupt.SIGKILL"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGKILL</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGPIPE">
+<span class="sig-name descname"><span class="pre">SIGPIPE</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGPIPE" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGPIPE" title="sigasexc.signal_interrupt.SignalInterrupt.SIGPIPE"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGPIPE</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGPROF">
+<span class="sig-name descname"><span class="pre">SIGPROF</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGPROF" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGPROF" title="sigasexc.signal_interrupt.SignalInterrupt.SIGPROF"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGPROF</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGPWR">
+<span class="sig-name descname"><span class="pre">SIGPWR</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGPWR" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGPWR" title="sigasexc.signal_interrupt.SignalInterrupt.SIGPWR"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGPWR</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGQUIT">
+<span class="sig-name descname"><span class="pre">SIGQUIT</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGQUIT" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGQUIT" title="sigasexc.signal_interrupt.SignalInterrupt.SIGQUIT"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGQUIT</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGRTMAX">
+<span class="sig-name descname"><span class="pre">SIGRTMAX</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGRTMAX" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGRTMAX" title="sigasexc.signal_interrupt.SignalInterrupt.SIGRTMAX"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGRTMAX</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGRTMIN">
+<span class="sig-name descname"><span class="pre">SIGRTMIN</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGRTMIN" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGRTMIN" title="sigasexc.signal_interrupt.SignalInterrupt.SIGRTMIN"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGRTMIN</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGSEGV">
+<span class="sig-name descname"><span class="pre">SIGSEGV</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGSEGV" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGSEGV" title="sigasexc.signal_interrupt.SignalInterrupt.SIGSEGV"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGSEGV</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGSTOP">
+<span class="sig-name descname"><span class="pre">SIGSTOP</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGSTOP" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGSTOP" title="sigasexc.signal_interrupt.SignalInterrupt.SIGSTOP"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGSTOP</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGSYS">
+<span class="sig-name descname"><span class="pre">SIGSYS</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGSYS" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGSYS" title="sigasexc.signal_interrupt.SignalInterrupt.SIGSYS"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGSYS</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGTERM">
+<span class="sig-name descname"><span class="pre">SIGTERM</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTERM" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTERM" title="sigasexc.signal_interrupt.SignalInterrupt.SIGTERM"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGTERM</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGTRAP">
+<span class="sig-name descname"><span class="pre">SIGTRAP</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTRAP" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTRAP" title="sigasexc.signal_interrupt.SignalInterrupt.SIGTRAP"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGTRAP</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGTSTP">
+<span class="sig-name descname"><span class="pre">SIGTSTP</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTSTP" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTSTP" title="sigasexc.signal_interrupt.SignalInterrupt.SIGTSTP"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGTSTP</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGTTIN">
+<span class="sig-name descname"><span class="pre">SIGTTIN</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTTIN" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTTIN" title="sigasexc.signal_interrupt.SignalInterrupt.SIGTTIN"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGTTIN</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGTTOU">
+<span class="sig-name descname"><span class="pre">SIGTTOU</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTTOU" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGTTOU" title="sigasexc.signal_interrupt.SignalInterrupt.SIGTTOU"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGTTOU</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGURG">
+<span class="sig-name descname"><span class="pre">SIGURG</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGURG" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGURG" title="sigasexc.signal_interrupt.SignalInterrupt.SIGURG"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGURG</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGUSR1">
+<span class="sig-name descname"><span class="pre">SIGUSR1</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGUSR1" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGUSR1" title="sigasexc.signal_interrupt.SignalInterrupt.SIGUSR1"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGUSR1</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGUSR2">
+<span class="sig-name descname"><span class="pre">SIGUSR2</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGUSR2" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGUSR2" title="sigasexc.signal_interrupt.SignalInterrupt.SIGUSR2"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGUSR2</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGVTALRM">
+<span class="sig-name descname"><span class="pre">SIGVTALRM</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGVTALRM" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGVTALRM" title="sigasexc.signal_interrupt.SignalInterrupt.SIGVTALRM"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGVTALRM</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGWINCH">
+<span class="sig-name descname"><span class="pre">SIGWINCH</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGWINCH" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGWINCH" title="sigasexc.signal_interrupt.SignalInterrupt.SIGWINCH"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGWINCH</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGXCPU">
+<span class="sig-name descname"><span class="pre">SIGXCPU</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGXCPU" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGXCPU" title="sigasexc.signal_interrupt.SignalInterrupt.SIGXCPU"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGXCPU</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sigasexc.signal_interrupt.SignalInterrupt.SIGXFSZ">
+<span class="sig-name descname"><span class="pre">SIGXFSZ</span></span><a class="headerlink" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGXFSZ" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#sigasexc.signal_interrupt.SignalInterrupt.SIGXFSZ" title="sigasexc.signal_interrupt.SignalInterrupt.SIGXFSZ"><code class="xref py py-class docutils literal notranslate"><span class="pre">sigasexc.signal_interrupt.SignalInterrupt.SIGXFSZ</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sigasexc.signal_handler.html" class="btn btn-neutral float-left" title="sigasexc.signal_handler module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, nadu.festival.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

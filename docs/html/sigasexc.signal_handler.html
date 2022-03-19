@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sigasexc.signal_handler module &mdash; Signal As Exception  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="sigasexc.signal_interrupt module" href="sigasexc.signal_interrupt.html" />
+    <link rel="prev" title="sigasexc package" href="sigasexc.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Signal As Exception
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="sigasexc.html">sigasexc package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="sigasexc.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">sigasexc.signal_handler module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sigasexc.signal_interrupt.html">sigasexc.signal_interrupt module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sigasexc.html#module-sigasexc">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Signal As Exception</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="sigasexc.html">sigasexc package</a> &raquo;</li>
+      <li>sigasexc.signal_handler module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/sigasexc.signal_handler.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-sigasexc.signal_handler">
+<span id="sigasexc-signal-handler-module"></span><h1>sigasexc.signal_handler module<a class="headerlink" href="#module-sigasexc.signal_handler" title="Permalink to this headline"></a></h1>
+<p>Signal handlers.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="sigasexc.signal_handler.CALLABLE_SIGNAL_HANDLER_TYPE">
+<span class="sig-prename descclassname"><span class="pre">sigasexc.signal_handler.</span></span><span class="sig-name descname"><span class="pre">CALLABLE_SIGNAL_HANDLER_TYPE</span></span><a class="headerlink" href="#sigasexc.signal_handler.CALLABLE_SIGNAL_HANDLER_TYPE" title="Permalink to this definition"></a></dt>
+<dd><p>Type of callable handler.</p>
+<p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">frame</span></code>]], <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="sigasexc.signal_handler.HANDLER_TYPE">
+<span class="sig-prename descclassname"><span class="pre">sigasexc.signal_handler.</span></span><span class="sig-name descname"><span class="pre">HANDLER_TYPE</span></span><a class="headerlink" href="#sigasexc.signal_handler.HANDLER_TYPE" title="Permalink to this definition"></a></dt>
+<dd><p>Type of handler.</p>
+<p>alias of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">signal.Handlers</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">frame</span></code>]], <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>]]</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sigasexc.signal_handler.SignalHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sigasexc.signal_handler.</span></span><span class="sig-name descname"><span class="pre">SignalHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">handler</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">signal.Handlers</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">frame</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sigasexc/signal_handler.html#SignalHandler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sigasexc.signal_handler.SignalHandler" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Signal handler.</p>
+<p class="rubric">Example</p>
+<p>Import signal and sigasexc libs.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">signal</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sigasexc</span> <span class="kn">import</span> <span class="n">SignalInterrupt</span><span class="p">,</span> <span class="n">SignalHandler</span>
+</pre></div>
+</div>
+<p>And write codes.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># use default handler (raise SignalInterrupt)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">handler</span> <span class="o">=</span> <span class="n">SignalHandler</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">with</span> <span class="n">handler</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">signal</span><span class="o">.</span><span class="n">SIGUSR1</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">SIGUSR2</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="c1"># Break when got signal.</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="k">pass</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># After the with block, the handler for the signal is</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># returned to the before the with block.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">except</span> <span class="n">SignalInterrupt</span><span class="o">.</span><span class="n">SIGUSR1</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SIGUSR1 except.&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">except</span> <span class="n">SignalInterrupt</span><span class="o">.</span><span class="n">SIGUSR2</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SIGUSR1 except.&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">else</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No signal except.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="sigasexc.signal_handler.SignalHandler.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">handler</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">signal.Handlers</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">frame</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/sigasexc/signal_handler.html#SignalHandler.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sigasexc.signal_handler.SignalHandler.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize SignalHandler.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>handler</strong> (<em>func</em><em>(</em><em>int</em><em>, </em><em>frame</em><em>) or </em><em>member of signal.Handlers</em><em>, </em><em>optional.</em>) – When handler is None, handler set to raise SignalInterrupt.
+handler can be a callable Python object taking two arguments,
+or one of the special values signal.SIG_IGN or signal.SIG_DFL.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sigasexc.signal_handler.SignalHandler.default_handler">
+<span class="sig-name descname"><span class="pre">default_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigframe</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">frame</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/sigasexc/signal_handler.html#SignalHandler.default_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sigasexc.signal_handler.SignalHandler.default_handler" title="Permalink to this definition"></a></dt>
+<dd><p>Raise subclass of SignalInterrupt has signum.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signum</strong> (<em>int</em>) – The signal number.</p></li>
+<li><p><strong>sigframe</strong> (<em>types.FrameType</em><em>, </em><em>optional</em>) – The current stack frame (None or a frame object).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Subclass of SignalInterrupt</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sigasexc.signal_handler.SignalHandler.listen">
+<span class="sig-name descname"><span class="pre">listen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">sigset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">signal.Signals</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#sigasexc.signal_handler.SignalHandler" title="sigasexc.signal_handler.SignalHandler"><span class="pre">sigasexc.signal_handler.SignalHandler</span></a></span></span><a class="reference internal" href="_modules/sigasexc/signal_handler.html#SignalHandler.listen"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sigasexc.signal_handler.SignalHandler.listen" title="Permalink to this definition"></a></dt>
+<dd><p>Set handler to signal in sigset.</p>
+<p>This function set handler and yeild self.
+After that, reset the handler.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>*sigset</strong> (<em>signal.Signals</em><em> or </em><em>int</em>) – The signals which handler set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sigasexc.html" class="btn btn-neutral float-left" title="sigasexc package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sigasexc.signal_interrupt.html" class="btn btn-neutral float-right" title="sigasexc.signal_interrupt module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, nadu.festival.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
